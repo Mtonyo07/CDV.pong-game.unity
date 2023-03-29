@@ -16,7 +16,7 @@ public class MoveCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
+        Debug.Log("Start");
       
  
     }
@@ -24,11 +24,11 @@ public class MoveCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-           
-            rigidBody.AddForce(Vector3.up * 20, ForceMode.Impulse);
+      
 
-        }
+
+            Debug.Log("Update");
+          
+        
     } 
 }
